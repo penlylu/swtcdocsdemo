@@ -59,17 +59,11 @@ http://localhost/v2/wallet/new
 ====================  ==========  ===================================
 
 例子：
-
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jQNdYXxgNHY49oxDL8mrjr7J6k7tdNy1kM/balances
+`http://localhost/v2/accounts/jQNdYXxgNHY49oxDL8mrjr7J6k7tdNy1kM/balances`
 
 结果如下：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -95,7 +89,7 @@ http://localhost/v2/wallet/new
 	  ]，
 	  "sequence": 164, 
 	}
-
+```
 返回的结果信息：
 
 +------------------------+------------+----------+---------------------------+
@@ -156,16 +150,11 @@ http://localhost/v2/wallet/new
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jQNdYXxgNHY49oxDL8mrjr7J6k7tdNy1kM/payments
+`http://localhost/v2/accounts/jQNdYXxgNHY49oxDL8mrjr7J6k7tdNy1kM/payments`
 
 提交的数据：
 
-.. code-block:: json
-
-
+```
 	{
 	  "secret": "snxVJXMkURjrscL7gfwfWcywYzPkL", 
 	  "client_id": "109", 
@@ -181,12 +170,10 @@ http://localhost/v2/wallet/new
 		"memos": ["hello world", "hello payment"]
 	  }
 	}
-
+```
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -196,7 +183,7 @@ http://localhost/v2/wallet/new
 	  "date": 1430324150, 
 	  "fee": "0.000012"
 	}
-
+```
 结果返回参数：
 
 ======================  ==========  =================================================================
@@ -225,16 +212,12 @@ http://localhost/v2/wallet/new
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/payments/D0BF25B015A6BF94
+`http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/payments/D0BF25B015A6BF94`
 
 结果：
 
 
-.. code-block:: json
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -252,7 +235,7 @@ http://localhost/v2/wallet/new
 	  }, 
 	  "effects": [ ]
 	}
-
+```
 返回的结果信息：
 
 ======================  ==========  =================================================================
@@ -284,15 +267,11 @@ http://localhost/v2/wallet/new
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jnbsmZpkBaGGpPip2A3HujzzWcQvURNGC4/payments?limit=2&marker=59A210AA6ECF92F68D2D7C07
+`http://localhost/v2/accounts/jnbsmZpkBaGGpPip2A3HujzzWcQvURNGC4/payments?limit=2&marker=59A210AA6ECF92F68D2D7C07`
 
 结果：
 
-.. code-block:: json
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -314,7 +293,7 @@ http://localhost/v2/wallet/new
 	    }
 	  ]
 	}
-
+```
 返回的结果是下一页的数据，返回的结果信息：
 
 ======================  ============  =================================================================
@@ -358,9 +337,7 @@ http://localhost/v2/wallet/new
 
 POST需要提交的参数格式如下：
 
-.. code-block:: json
-
-
+```
 	{
 	  "secret": "snUaJxp2k4WFt5LCCtEx2zjThQhpT", 
 	  "order": {
@@ -370,19 +347,14 @@ POST需要提交的参数格式如下：
 		"price": "0.0124"
 	  }
 	}
-
+```
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jf96oSdxU7kwfCHF2sjm9GmcvhFBcfN8Py/orders
+`http://localhost/v2/accounts/jf96oSdxU7kwfCHF2sjm9GmcvhFBcfN8Py/orders`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -391,7 +363,7 @@ POST需要提交的参数格式如下：
 	  "fee": "0.000012", 
 	  "sequence": 99
 	}
-
+```
 返回的结果信息：
 
 ======================  ============  =================================================================
@@ -429,25 +401,18 @@ secret                   String          井通钱包私钥
 
 DELETE需要提交的参数格式如下：
 
-.. code-block:: json
-
-
+```
 	{
 	  "secret": "snUaJxp2k4WFt5LCCtEx2zjThQhpT"
 	}
-
+```
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jJHPjyMfaKDVfCjuKdn8zFmYZVYXg7akeJ/orders/84
+`http://localhost/v2/accounts/jJHPjyMfaKDVfCjuKdn8zFmYZVYXg7akeJ/orders/84`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -455,7 +420,7 @@ DELETE需要提交的参数格式如下：
 	  "fee": "0.000012", 
 	  "sequence": 86, 
 	}
-
+```
 返回的结果信息：
 
 ======================  ============  =================================================================
@@ -481,16 +446,11 @@ DELETE需要提交的参数格式如下：
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost /v2/accounts/jf96oSdxU7kwfCHF2sjm9GmcvhFBcfN8Py/orders
+`http://localhost /v2/accounts/jf96oSdxU7kwfCHF2sjm9GmcvhFBcfN8Py/orders`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -539,7 +499,7 @@ DELETE需要提交的参数格式如下：
 	    }
 	  ]
 	}
-
+```
 返回的结果信息：
 
 +------------------------+------------+----------+---------------------------+
@@ -576,16 +536,11 @@ DELETE需要提交的参数格式如下：
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jf96oSdxU7kwfCHF2sjm9GmcvhFBcfN8Py/orders/6ECFE85BDB388AFCD2A
+`http://localhost/v2/accounts/jf96oSdxU7kwfCHF2sjm9GmcvhFBcfN8Py/orders/6ECFE85BDB388AFCD2A`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -601,7 +556,7 @@ DELETE需要提交的参数格式如下：
 	    "sequence": 761
 	  }
 	}
-
+```
 
 返回的结果信息：
 
@@ -656,16 +611,11 @@ DELETE需要提交的参数格式如下：
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/order_book/CNY+jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS/USD+jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS
+`http://localhost/v2/order_book/CNY+jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS/USD+jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -715,7 +665,7 @@ DELETE需要提交的参数格式如下：
 	    }
 	  ]
 	}
-
+```
 返回的结果信息：
 
 +------------------------+------------+----------+---------------------------+
@@ -764,16 +714,11 @@ DELETE需要提交的参数格式如下：
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/order_book/bids/SWT/CNY+jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS?results_per_page=3&page=2
+`http://localhost/v2/order_book/bids/SWT/CNY+jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS?results_per_page=3&page=2`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": "0", 
@@ -805,7 +750,7 @@ DELETE需要提交的参数格式如下：
 	    }
 	  ]
 	}
-
+```
 返回的结果信息：
 
 +------------------------+------------+----------+---------------------------+
@@ -854,16 +799,11 @@ DELETE需要提交的参数格式如下：
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/order_book/asks/SWT/CNY+jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS/USD?results_per_page=2&page=3
+`http://localhost/v2/order_book/asks/SWT/CNY+jBciDE8Q3uJjf111VeiUNM775AMKHEbBLS/USD?results_per_page=2&page=3`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": "0", 
@@ -887,7 +827,7 @@ DELETE需要提交的参数格式如下：
 	    }
 	  ]
 	}
-
+```
 
 ## 交易记录接口
 
@@ -911,16 +851,11 @@ DELETE需要提交的参数格式如下：
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/transactions/264ECE86AF9A830405B71C9A9FDB6807AC55525CA73E6DD1C61621F33D13F749
+`http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/transactions/264ECE86AF9A830405B71C9A9FDB6807AC55525CA73E6DD1C61621F33D13F749`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -939,7 +874,7 @@ DELETE需要提交的参数格式如下：
 	    "effects": [ ]
 	  }
 	}
-
+```
 返回的结果信息：
 
 +------------------------+------------+----------+---------------------------+
@@ -994,16 +929,11 @@ DELETE需要提交的参数格式如下：
 
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jHZ5pAKGcpCdvU8N177eePYtMY4ZtC85o6/transactions?results_per_page=5&marker={ledger:6946767,seq:0}
+`http://localhost/v2/accounts/jHZ5pAKGcpCdvU8N177eePYtMY4ZtC85o6/transactions?results_per_page=5&marker={ledger:6946767,seq:0}`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": 0, 
@@ -1125,7 +1055,7 @@ DELETE需要提交的参数格式如下：
 	    }
 	  ]
 	}
-
+```
 返回的结果信息：
 
 +------------------------+------------+----------+-----------------------------------+
@@ -1460,28 +1390,21 @@ payload                     String          智能合约代码
 
 POST需要提交的参数格式如下：
 
-.. code-block:: json
-
-
+```
 	{
 	  "secret": "snUaJxp2k4WFt5LCCtEx2zjThQhpT", 
 	  "amount": 10,
 	  "payload": "function Init(...) a={} for k,v in ipairs({...}) do a[k]=v end b=a[1] return accountinfo(b) end;
 	    function foo(...) a={} for k,v in ipairs({...}) do a[k]=v end b=a[1] return accountinfo(b) end"
 	}
-
+```
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/contract/deploy
+`http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/contract/deploy`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": "0", 
@@ -1505,7 +1428,7 @@ POST需要提交的参数格式如下：
 	   "hash": "4E00320F4D0FB5567ADB938A6463D62BA93ACF94C049972E2C4DCB01C6B57540", 
 		}
 	}
-
+```
 返回的结果信息：
 
 +------------------------+------------+----------+-----------------------------------+
@@ -1574,27 +1497,20 @@ params                     Array          合约参数
 
 POST需要提交的参数格式如下：
 
-.. code-block:: json
-
-
+```
 	{
 	  "secret": "snUaJxp2k4WFt5LCCtEx2zjThQhpT", 
 	  "destination": "jKotgzRHyoa7dywd7vf6LgFBXnv3K66zEg", 
 	"params":  ["jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834"]
 	}
-
+```
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/contract/call
+`http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/contract/call`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": "0", 
@@ -1635,7 +1551,7 @@ POST需要提交的参数格式如下：
 	   "hash": "4E00320F4D0FB5567ADB938A6463D62BA93ACF94C049972E2C4DCB01C6B57540", 
 		}
 	}
-
+```
 返回的结果信息：
 
 
@@ -1694,22 +1610,18 @@ POST需要提交的参数格式如下：
 
 例子：
 
-.. code-block:: json
-
-
-    http://localhost/v2/ledger/index
+`http://localhost/v2/ledger/index`
 
 结果：
 
-.. code-block:: json
-
+```
     {
       "success": true,
       "status_code": "0",
       "ledger_hash": "B6EC1E9526DBEB2C746DE76366FBF82F9890BA6813B5AEDAD7A27A0B18226B45",
       "ledger_index": 9590468
     }
-
+```
 返回的结果信息:
 
 ======================  ============  =================================================================
@@ -1734,15 +1646,11 @@ ledger_index               Integer        账本号/区块高度
 
 例子：
 
-.. code-block:: json
-
-
-    http://localhost/v2/ledger/index/9590468
+`http://localhost/v2/ledger/index/9590468`
 
 结果：
 
-.. code-block:: json
-
+```
     {
       "success": true,
       "status_code": "0",
@@ -1764,7 +1672,7 @@ ledger_index               Integer        账本号/区块高度
          "432709B5DAA873132819DED7F71B6AF3E89E05AE35268DC7AE13BAB1CF685FCC"
       ]
     }
-
+```
 返回的结果信息:
 
 ======================  ============  =================================================================
@@ -1802,15 +1710,11 @@ ledger_index               Integer        账本号/区块高度
 
 例子：
 
-.. code-block:: json
-
-    
-    http://localhost/v2/ledger/hash/C08847C320D4F9E136BFCBC58D1F39C630C0F5421A06C739AF30BAF05F94714F
+`http://localhost/v2/ledger/hash/C08847C320D4F9E136BFCBC58D1F39C630C0F5421A06C739AF30BAF05F94714F`
 
 结果：
 
-.. code-block:: json
-
+```
     {
       "success": true,
       "status_code": "0",
@@ -1833,7 +1737,7 @@ ledger_index               Integer        账本号/区块高度
          "432709B5DAA873132819DED7F71B6AF3E89E05AE35268DC7AE13BAB1CF685FCC"
       ]
     }
-
+```
 返回的结果信息：
 
 ======================  ============  =================================================================
@@ -1874,25 +1778,18 @@ blob                      String          签名后的交易信息
 
 POST需要提交的参数格式如下：
 
-.. code-block:: json
-
-
+```
 	{
 	  "blob": "1200002200000000240000028461400000000007A12068400000000000000A73210224445F6980BBC7F34F5042893C419E536468F92A9034177C0CB786CC7836025B74473045022100FC7EA9B7200CA4D3F2C4948E86140F14D5C1FA1CE68682288B51928A7C7256ED02204D3993571B4EEA50A64A3CDB2A38D61EA28F46C3563CF64B48A211E44456738D81147A44B90BCADB1F585D590DC31AB83245E049BB668314B9DFBBDC029B81C608497CE3D61C70D79BCCA955"
 	}
-
+```
 例子：
 
-.. code-block:: json
-
-
-	http://localhost/v2/blob
+`http://localhost/v2/blob`
 
 结果：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": true, 
 	  "status_code": "0", 
@@ -1913,7 +1810,7 @@ POST需要提交的参数格式如下：
 		"hash": "E663D510536DCE4DEE48B1C6F958B102386E462F80CAA77720921341AFD0A3DC"
 		}
 	}
-
+```
 返回的结果信息：
 
 +------------------------+------------+----------+-----------------------------------+
@@ -1960,56 +1857,46 @@ REST API订阅后台是API一个服务地址，测试环境的接口是wss://tap
 
 连接Websocket服务之后，后台返回订阅ID，如下:
 
-.. code-block:: json
-
-
+```
 	{
 	  "type": "connection", 
 	  "success": true, 
 	  "id": "03afb5a3-0bdb-4a6b-bc6a-4ff72cce05bc"
 	}
-
+```
 发起订阅
 
 客户端在连接上服务之后，通过发送订阅请求进行订阅，订阅请求如下：
 
-.. code-block:: json
-
-
+```
 	{
 	  "command": "subscribe", 
 	  "type": "account",
 	  "account": "jDUjqoDZLhzx4DCf6pvSivjkjgtRESY62c"
 	}
-
+```
 订阅请求中，必须将订阅用户的地址和类型一起提交上来，参数type表示所订阅的类型，包含3种：account(订阅某个账号的交易记录)、transactions(订阅所有交易记录)、ledger(订阅账本消息)。
 订阅成功之后，返回：
 
-.. code-block:: json
-
-
+```
 	{
 	  "account": "jDUjqoDZLhzx4DCf6pvSivjkjgtRESY62c", 
 	  "success": true,
 	  "command": "subscribe",
 	  "type": "account",
 	}
-
+```
 当请求的JSON格式不对时，失败返回
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": false, 
 	  "error": "xxx"
 	}
-
+```
 当请求的参数有问题时，返回：
 
-.. code-block:: json
-
-
+```
 	{
 	  "account": "jDUjqoDZLhzx4DCf6pvSivjkjgtRESY62c", 
 	  "success": false, 
@@ -2018,7 +1905,7 @@ REST API订阅后台是API一个服务地址，测试环境的接口是wss://tap
 	  "type": "account", 
 	  "error": "XXX"
 	}
-
+```
 error包括缺少account，type，account格式不对，type格式不对等，分别是：
 1.missing account
 2.account is not valid jingtum address
@@ -2028,42 +1915,34 @@ error包括缺少account，type，account格式不对，type格式不对等，�
 
 客户端在连接上服务之后，通过发送取消订阅请求进行取消订阅，取消订阅请求如下：
 
-.. code-block:: json
-
-
+```
 	{
 	  "command": "unsubscribe", 
 	  "account": "jDUjqoDZLhzx4DCf6pvSivjkjgtRESY62c",
 	  "type": "account",
 	}
-
+```
 取消订阅成功时候，返回：
 
-.. code-block:: json
-
-
+```
 	{
 	  "command": "unsubscribe", 
 	  "account": "jDUjqoDZLhzx4DCf6pvSivjkjgtRESY62c", 
 	  "success": true, 
 	  "type": "account"
 	}
-
+```
 当请求的JSON格式有问题时，返回：
 
-.. code-block:: json
-
-
+```
 	{
 	  "success": false, 
 	  "error": "xxx"
 	}
-
+```
 当请求的参数不正确时，返回：
 
-.. code-block:: json
-
-
+```
 	{
 	  "account": "jDUjqoDZLhzx4DCf6pvSivjkjgtRESYdfad62c", 
 	  "success": false, 
@@ -2071,7 +1950,7 @@ error包括缺少account，type，account格式不对，type格式不对等，�
 	  "type": "account", 
 	  "error": "XXX"
 	}
-
+```
 取消订阅，参数不正确主要是account缺失或者格式不正确：
 a)account is missing
 b)Invalid type
@@ -2082,9 +1961,7 @@ c)等
 
 用户在做完异步操作之后，且订阅了用户的交易消息，用户可以收到如下的交易信息：
 
-.. code-block:: json
-
-
+```
 	{
 	  "account": "jsGn5UAxwTuYfN5aa6TBC2KZyDDoFJfM8b", 
 	  "type": "Payment", 
@@ -2104,14 +1981,12 @@ c)等
 	    "effects": [ ]
 	  }
 	}
-
+```
 基本格式为account: 帐号，type: 交易类型，transaction: 交易信息，交易类型和交易信息里面的内容和API里面的信息一致。
 在用户被动成交时，用户也会收到交易相关的信息。
 当交易失败时，会有如下的格式的消息：
 
-.. code-block:: json
-
-
+```
 	{
 	  "account": "jsGn5UAxwTuYfN5aa6TBC2KZyDDoFJfM8b", 
 	  "type": "Payment", 
@@ -2121,30 +1996,26 @@ c)等
 	    "message": "xxx"
 	  }
 	}
-
+```
 通过success可以判断返回的交易结果是成功的还是失败的，其他的失败记录均即时反馈回给用户，无需在订阅中获得。
 
 关闭订阅
 
 通过发送如下命令，关闭订阅
 
-.. code-block:: json
-
-
+```
 	{
 	  "command": "close"
 	}
-
+```
 关闭订阅之后，后台返回订阅关闭结果
 
-.. code-block:: json
-
-
+```
 	{
 	  "command": "close", 
 	  "success": true
 	}
-
+```
 
 ## 错误信息
 

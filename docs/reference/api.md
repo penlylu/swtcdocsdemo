@@ -4,7 +4,7 @@
 
 ## 账号类接口
 
-创建钱包
+### 创建钱包
 
 接口：/v2/wallet/new，GET方法
 
@@ -12,6 +12,7 @@
 http://localhost/v2/wallet/new
 
 结果如下：
+
 ```
 	{
 	  "success": true, 
@@ -22,6 +23,7 @@ http://localhost/v2/wallet/new
 	  }
 	}
 ```
+
 返回的结果信息：
 
 | 参数 | | 类型 |说明|
@@ -32,7 +34,7 @@ http://localhost/v2/wallet/new
 || address | String |井通钱包地址
 
 
-获得账号余额
+### 获得账号余额
 
 接口：/v2/accounts/{:address}/balances，GET方法
 
@@ -51,6 +53,7 @@ http://localhost/v2/wallet/new
 |issuer|String |指定返回对应银关发行的货币|
 
 例子：
+
 `http://localhost/v2/accounts/jQNdYXxgNHY49oxDL8mrjr7J6k7tdNy1kM/balances`
 
 结果如下：
@@ -96,7 +99,7 @@ http://localhost/v2/wallet/new
 
 ## 支付接口
 
-支付请求
+### 支付请求
 
 接口：/v2/accounts/{:source_address}/payments，POST方法
 
@@ -142,6 +145,7 @@ http://localhost/v2/wallet/new
 	  }
 	}
 ```
+
 结果：
 
 ```
@@ -155,6 +159,7 @@ http://localhost/v2/wallet/new
 	  "fee": "0.000012"
 	}
 ```
+
 结果返回参数：
 
 |参数 | 类型 |说明|
@@ -166,7 +171,7 @@ http://localhost/v2/wallet/new
 |date|Integer|交易时间，UNIXTIME|
 |fee|String|交易费用，井通计价|
 
-获得支付信息
+### 获得支付信息
 
 接口：/v2/accounts/{:address}/payments/{:id}，GET方法
 
@@ -202,6 +207,7 @@ http://localhost/v2/wallet/new
 	  "effects": [ ]
 	}
 ```
+
 返回的结果信息：
 
 |参数 | 类型 |说明|
@@ -217,7 +223,7 @@ http://localhost/v2/wallet/new
 |amount|Object|交易金额|
 |effects|Array|支付的效果，详见下面交易记录效果|
 
-获得支付历史
+### 获得支付历史
 
 接口：/v2/accounts/{:address}/payments，GET方法
 
@@ -256,6 +262,7 @@ http://localhost/v2/wallet/new
 	  ]
 	}
 ```
+
 返回的结果是下一页的数据，返回的结果信息：
 
 |参数 | 类型 |说明|
@@ -265,7 +272,7 @@ http://localhost/v2/wallet/new
 
 ## 挂单类接口
 
-提交挂单
+### 提交挂单
 
 接口：/v2/accounts/{:address}/orders，POST方法
 
@@ -299,6 +306,7 @@ POST需要提交的参数格式如下：
 	  }
 	}
 ```
+
 例子：
 
 `http://localhost/v2/accounts/jf96oSdxU7kwfCHF2sjm9GmcvhFBcfN8Py/orders`
@@ -315,6 +323,7 @@ POST需要提交的参数格式如下：
 	  "sequence": 99
 	}
 ```
+
 返回的结果信息：
 
 |参数 | 类型 |说明|
@@ -325,7 +334,7 @@ POST需要提交的参数格式如下：
 |fee|String|交易费用，井通计价|
 |sequence|Integer|交易单子序号|
 
-取消挂单
+### 取消挂单
 
 接口：/v2/accounts/{:address}/orders/{:order}，DELETE方法
 
@@ -351,6 +360,7 @@ DELETE需要提交的参数格式如下：
 	  "secret": "snUaJxp2k4WFt5LCCtEx2zjThQhpT"
 	}
 ```
+
 例子：
 
 `http://localhost/v2/accounts/jJHPjyMfaKDVfCjuKdn8zFmYZVYXg7akeJ/orders/84`
@@ -366,6 +376,7 @@ DELETE需要提交的参数格式如下：
 	  "sequence": 86, 
 	}
 ```
+
 返回的结果信息：
 
 |参数 | 类型 |说明|
@@ -375,7 +386,7 @@ DELETE需要提交的参数格式如下：
 |fee|String|交易费用，井通计价
 |sequence|Integer|操作订单序列号
 
-获取用户挂单
+### 获取用户挂单
 
 接口：/v2/accounts/{:address}/orders，GET方法
 
@@ -441,6 +452,7 @@ DELETE需要提交的参数格式如下：
 	  ]
 	}
 ```
+
 返回的结果信息：
 
 | 参数 | | 类型 |说明|
@@ -453,8 +465,7 @@ DELETE需要提交的参数格式如下：
 || price | String |挂单的价格|
 || sequence | Integer |交易序列号|
 
-获取挂单信息
-
+### 获取挂单信息
 
 接口：/v2/accounts/{:address}/orders/{:hash}，GET方法
 
@@ -505,7 +516,7 @@ DELETE需要提交的参数格式如下：
 || type | Integer |挂单的类型，sell或buy|
 || sequence | Integer |交易序列号|
 
-获得货币对的挂单列表
+### 获得货币对的挂单列表
 
 接口：/v2/order_book/{:base}/{:counter}，GET方法
 
@@ -580,6 +591,7 @@ DELETE需要提交的参数格式如下：
 	  ]
 	}
 ```
+
 返回的结果信息：
 
 | 参数 | | 类型 |说明|
@@ -593,7 +605,7 @@ DELETE需要提交的参数格式如下：
 || sequence | String |交易序号|
 || passive | Boolean |交易是否是被动交易|
 
-获得货币对的买单列表
+### 获得货币对的买单列表
 
 接口：/v2/order_book/bids/{:base}/{:counter}，GET方法
 
@@ -651,6 +663,7 @@ DELETE需要提交的参数格式如下：
 	  ]
 	}
 ```
+
 返回的结果信息：
 
 | 参数 | | 类型 |说明|
@@ -664,7 +677,7 @@ DELETE需要提交的参数格式如下：
 || sequence | String |交易序号|
 || passive | Boolean |交易是否是被动交易|
 
-获得货币对的卖单列表
+### 获得货币对的卖单列表
 
 接口：/v2/order_book/asks/{:base}/{:counter}，GET方法
 
@@ -716,7 +729,7 @@ DELETE需要提交的参数格式如下：
 
 ## 交易记录接口
 
-查询交易信息
+### 查询交易信息
 
 接口1：/v2/accounts/{:address}/transactions/{:id}，GET方法
 
@@ -757,6 +770,7 @@ DELETE需要提交的参数格式如下：
 	  }
 	}
 ```
+
 返回的结果信息：
 
 | 参数 | | 类型 |说明|
@@ -772,7 +786,7 @@ DELETE需要提交的参数格式如下：
 || amount | Object |交易金额|
 || effects | Object |交易效果，详见下面分析|
 
-查询交易记录
+### 查询交易记录
 
 接口：/v2/accounts/{:address}/transactions，GET方法
 
@@ -920,6 +934,7 @@ DELETE需要提交的参数格式如下：
 	  ]
 	}
 ```
+
 返回的结果信息：
 
 | 参数 | | 类型 |说明|
@@ -940,7 +955,7 @@ DELETE需要提交的参数格式如下：
 || price | String |挂单的价格，挂单交易才有|
 || effects | Object |交易效果，详见如下|
 
-交易记录信息
+### 交易记录信息
 
 用户提交的交易类型主要有Payment、OfferCreate、OfferCancel和RelationSet；
 
@@ -956,7 +971,7 @@ type                 交易类型
 
 type有如下几种：
 
-1. sent，用户进行支付操作，在交易信息中包含的信息有：
+1.sent，用户进行支付操作，在交易信息中包含的信息有：
 
 | 参数 | | 类型 |说明|
 | :- | :- | :-|:-|
@@ -967,7 +982,7 @@ type有如下几种：
 || issuer | String |货币发行方，SWT为空|
 | effects || Array|[]，空  |
 
-2. received，用户接受支付，在交易信息中包含的信息有：
+2.received，用户接受支付，在交易信息中包含的信息有：
 
 | 参数 | | 类型 |说明|
 | :- | :- | :-|:-|
@@ -978,7 +993,7 @@ type有如下几种：
 || issuer | String |货币发行方，SWT为空|
 | effects || Array|[]，空  |
 
-3. convert，用户进行兑换操作，在交易信息中包含的信息有：
+3.convert，用户进行兑换操作，在交易信息中包含的信息有：
 
 | 参数 | | 类型 |说明|
 | :- | :- | :-|:-|
@@ -992,7 +1007,7 @@ type有如下几种：
 || issuer | String |货币发行方，SWT为空|
 | effects || Array|[]，空  |
 
-4. offernew，用户进行挂单操作，在交易信息中包含的信息有：
+4.offernew，用户进行挂单操作，在交易信息中包含的信息有：
 
 |参数 | 类型 |说明|
 |:- |:-|:-|
@@ -1002,7 +1017,7 @@ type有如下几种：
 |price|String|挂单的价格|
 |effects|Array|详见下面的effects解释|
 
-5. offercancel，用户进行取消挂单操作，在交易信息中包含的信息有：
+5.offercancel，用户进行取消挂单操作，在交易信息中包含的信息有：
 
 |参数 | 类型 |说明|
 |:- |:-|:-|
@@ -1012,25 +1027,24 @@ type有如下几种：
 |price|String|挂单的价格|
 |effects|Array|详见下面的effects解释|
 
-6. offereffect，挂单成交情况，即被动成交的情况，在交易信息中包含的信息有：
+6.offereffect，挂单成交情况，即被动成交的情况，在交易信息中包含的信息有：
 
 |参数 | 类型 |说明|
 |:- |:-|:-|
 |effects|Array|详见下面的effects解释|
 
-交易效果effects
+### 交易效果effects
 
-effects是每个用户交易记录信息里面的交易效果，是个JSON数组，数字可以包含多项，每项内容都包含效果类型effect字段，根据effect的不同里面的内容也不同
-：
+effects是每个用户交易记录信息里面的交易效果，是个JSON数组，数字可以包含多项，每项内容都包含效果类型effect字段，根据effect的不同里面的内容也不同：
 
-1. offer_funded，交易实际成交；交易提示信息建议：交易成交，您以XXX价格买了/卖了XXX卖了/买了XXX，价格是XXX；其中包含的信息有：
+1.offer_funded，交易实际成交；交易提示信息建议：交易成交，您以XXX价格买了/卖了XXX卖了/买了XXX，价格是XXX；其中包含的信息有：
 
 | 参数 | | 类型 |说明|
 | :- | :- | :-|:-|
-|effect                  ||String      |   offer_funded                               |
-| type                   || String     | 交易类型，sell或buy                          |
-| pair                   ||String      | 交易的货币对                                 |
-| amount                 ||String      | 挂单的数量                                   |
+|effect||String      |   offer_funded                               |
+| type|| String     | 交易类型，sell或buy                          |
+| pair||String      | 交易的货币对                                 |
+| amount||String      | 挂单的数量                                   |
 | got                    ||Object      | 用户获得的金额                               |
 || value              |  String    |金额                                          |
 || currency           |String      |货币                                          |
@@ -1046,7 +1060,7 @@ effects是每个用户交易记录信息里面的交易效果，是个JSON数组
 || seq                |Integer     |对家单子序号	                               |
 || hash               |String      |对家交易hash                                  |
 
-2. offer_partially_funded，交易部分成交；交易提示信息建议：交易部分成交，您以XXX价格买了/卖了XXX卖了/买了XXX，价格是XXX，剩余挂单由于金额不足被取消（可选，根据cancelled），还剩XXX单子（可选，根据remaining）；其中包含的信息有：
+2.offer_partially_funded，交易部分成交；交易提示信息建议：交易部分成交，您以XXX价格买了/卖了XXX卖了/买了XXX，价格是XXX，剩余挂单由于金额不足被取消（可选，根据cancelled），还剩XXX单子（可选，根据remaining）；其中包含的信息有：
 
 | 参数 | | 类型 |说明|
 | :- | :- | :-|:-|
@@ -1072,7 +1086,7 @@ effects是每个用户交易记录信息里面的交易效果，是个JSON数组
 || seq                |Integer     |对家单子序号	                               |
 || hash               |String      |对家交易hash                                  |
 
-3. offer_cancelled，被关联交易取消单子，交易单子被取消；交易提示信息建议：由于缺少金额单子XXX被取消；其中包含的信息有：
+3.offer_cancelled，被关联交易取消单子，交易单子被取消；交易提示信息建议：由于缺少金额单子XXX被取消；其中包含的信息有：
 
 |参数 | 类型 |说明|
 |:- |:-|:-|
@@ -1085,7 +1099,7 @@ effects是每个用户交易记录信息里面的交易效果，是个JSON数组
 |hash|String|被取消单子的hash|
 |deleted|Boolean|单子是否被删除，取消单子为true|
 
-4. offer_created，交易单子创建；交易提示信息建议：您创建了一个买/卖单，以XXX交易XXX；其中包含的信息有：
+4.offer_created，交易单子创建；交易提示信息建议：您创建了一个买/卖单，以XXX交易XXX；其中包含的信息有：
 
 |参数 | 类型 |说明|
 |:- |:-|:-|
@@ -1096,7 +1110,7 @@ effects是每个用户交易记录信息里面的交易效果，是个JSON数组
 |price|String|挂单的价格|
 |seq|Integer|新建的单子序号|
 
-5. offer_bought，挂单买到/卖出，成交的单子信息；交易提示信息建议：您以XXX价格买了/卖了XXX卖了/买了XXX；其中包含的信息有：
+5.offer_bought，挂单买到/卖出，成交的单子信息；交易提示信息建议：您以XXX价格买了/卖了XXX卖了/买了XXX；其中包含的信息有：
 
 | 参数 | | 类型 |说明|
 | :- | :- | :-|:-|
@@ -1121,7 +1135,7 @@ effects是每个用户交易记录信息里面的交易效果，是个JSON数组
 ## 智能合约
 -----------------------------------
 
-部署合约
+### 部署合约
 
 接口：/v2/accounts/{:address}/contract/deploy，POST方法
 
@@ -1149,6 +1163,7 @@ POST需要提交的参数格式如下：
 	    function foo(...) a={} for k,v in ipairs({...}) do a[k]=v end b=a[1] return accountinfo(b) end"
 	}
 ```
+
 例子：
 
 `http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/contract/deploy`
@@ -1204,7 +1219,7 @@ POST需要提交的参数格式如下：
 ||TxnSignature        |String      |交易签名                                      |
 || hash               |String      |交易hash                                      |
 
-调用合约
+### 调用合约
 
 接口：/v2/accounts/{:address}/contract/call，POST方法
 
@@ -1231,6 +1246,7 @@ POST需要提交的参数格式如下：
 	"params":  ["jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834"]
 	}
 ```
+
 例子：
 
 `http://localhost/v2/accounts/jsqRs9BDCjyTuRWEPZk3yHa4MFmRi9D834/contract/call`
@@ -1279,6 +1295,7 @@ POST需要提交的参数格式如下：
 		}
 	}
 ```
+
 返回的结果信息：
 
 | 参数 | | 类型 |说明|
@@ -1307,7 +1324,7 @@ POST需要提交的参数格式如下：
 ## 账本
 -----------------------------------
 
-获得最新账本号
+### 获得最新账本号
 
 接口：/v2/ledger/index, GET方法
 
@@ -1335,7 +1352,7 @@ POST需要提交的参数格式如下：
 |ledger_hash|String|账本hash|
 |ledger_index|Integer|账本号/区块高度|
 
-通过账本号获得某一账本信息及交易信息
+### 通过账本号获得某一账本信息及交易信息
 
 接口：/v2/ledger/index/{:index}, GET方法
 
@@ -1374,6 +1391,7 @@ POST需要提交的参数格式如下：
       ]
     }
 ```
+
 返回的结果信息:
 
 |参数 | 类型 |说明|
@@ -1395,7 +1413,7 @@ POST需要提交的参数格式如下：
 |transaction_hash|String|交易hash树根|
 |transactions|Array|该账本里的交易列表|
 
-通过账本hash获得某一账本信息及交易信息
+### 通过账本hash获得某一账本信息及交易信息
 
 接口：/v2/ledger/hash/{:hash}, GET方法
 
@@ -1435,6 +1453,7 @@ POST需要提交的参数格式如下：
       ]
     }
 ```
+
 返回的结果信息：
 
 |参数 | 类型 |说明|
@@ -1459,7 +1478,7 @@ POST需要提交的参数格式如下：
 ## 本地签名
 -----------------------------------
 
-提交本地签名
+### 提交本地签名
 
 接口：/v2/blob，POST方法
 
@@ -1476,6 +1495,7 @@ POST需要提交的参数格式如下：
 	  "blob": "1200002200000000240000028461400000000007A12068400000000000000A73210224445F6980BBC7F34F5042893C419E536468F92A9034177C0CB786CC7836025B74473045022100FC7EA9B7200CA4D3F2C4948E86140F14D5C1FA1CE68682288B51928A7C7256ED02204D3993571B4EEA50A64A3CDB2A38D61EA28F46C3563CF64B48A211E44456738D81147A44B90BCADB1F585D590DC31AB83245E049BB668314B9DFBBDC029B81C608497CE3D61C70D79BCCA955"
 	}
 ```
+
 例子：
 
 `http://localhost/v2/blob`
@@ -1504,6 +1524,7 @@ POST需要提交的参数格式如下：
 		}
 	}
 ```
+
 返回的结果信息：
 
 |参数||类型|说明|
@@ -1526,11 +1547,10 @@ POST需要提交的参数格式如下：
 
 ## 订阅功能
 
-
 为了减少前端软件的复杂度，井通标准接口（REST API）提供井通地址的websocket长连接服务。前端软件可以通过websocket连接向标准接口订阅和井通地址相关的交易信息。任何和该地址相关的交易信息将会通过相应的websocket连接传出。
 REST API订阅后台是API一个服务地址，测试环境的接口是wss://tapi.jingtum.com:5443/v2
 
-连接服务
+### 连接服务
 
 连接Websocket服务之后，后台返回订阅ID，如下:
 
@@ -1541,7 +1561,8 @@ REST API订阅后台是API一个服务地址，测试环境的接口是wss://tap
 	  "id": "03afb5a3-0bdb-4a6b-bc6a-4ff72cce05bc"
 	}
 ```
-发起订阅
+
+### 发起订阅
 
 客户端在连接上服务之后，通过发送订阅请求进行订阅，订阅请求如下：
 
@@ -1552,6 +1573,7 @@ REST API订阅后台是API一个服务地址，测试环境的接口是wss://tap
 	  "account": "jDUjqoDZLhzx4DCf6pvSivjkjgtRESY62c"
 	}
 ```
+
 订阅请求中，必须将订阅用户的地址和类型一起提交上来，参数type表示所订阅的类型，包含3种：account(订阅某个账号的交易记录)、transactions(订阅所有交易记录)、ledger(订阅账本消息)。
 订阅成功之后，返回：
 
@@ -1563,6 +1585,7 @@ REST API订阅后台是API一个服务地址，测试环境的接口是wss://tap
 	  "type": "account",
 	}
 ```
+
 当请求的JSON格式不对时，失败返回
 
 ```
@@ -1571,6 +1594,7 @@ REST API订阅后台是API一个服务地址，测试环境的接口是wss://tap
 	  "error": "xxx"
 	}
 ```
+
 当请求的参数有问题时，返回：
 
 ```
@@ -1583,12 +1607,13 @@ REST API订阅后台是API一个服务地址，测试环境的接口是wss://tap
 	  "error": "XXX"
 	}
 ```
+
 error包括缺少account，type，account格式不对，type格式不对等，分别是：
 1.missing account
 2.account is not valid jingtum address
 3.invalid type
 
-取消订阅
+### 取消订阅
 
 客户端在连接上服务之后，通过发送取消订阅请求进行取消订阅，取消订阅请求如下：
 
@@ -1599,6 +1624,7 @@ error包括缺少account，type，account格式不对，type格式不对等，�
 	  "type": "account",
 	}
 ```
+
 取消订阅成功时候，返回：
 
 ```
@@ -1609,6 +1635,7 @@ error包括缺少account，type，account格式不对，type格式不对等，�
 	  "type": "account"
 	}
 ```
+
 当请求的JSON格式有问题时，返回：
 
 ```
@@ -1617,6 +1644,7 @@ error包括缺少account，type，account格式不对，type格式不对等，�
 	  "error": "xxx"
 	}
 ```
+
 当请求的参数不正确时，返回：
 
 ```
@@ -1628,13 +1656,13 @@ error包括缺少account，type，account格式不对，type格式不对等，�
 	  "error": "XXX"
 	}
 ```
+
 取消订阅，参数不正确主要是account缺失或者格式不正确：
 a)account is missing
 b)Invalid type
 c)等
 
-接收消息
-
+### 接收消息
 
 用户在做完异步操作之后，且订阅了用户的交易消息，用户可以收到如下的交易信息：
 
@@ -1659,6 +1687,7 @@ c)等
 	  }
 	}
 ```
+
 基本格式为account: 帐号，type: 交易类型，transaction: 交易信息，交易类型和交易信息里面的内容和API里面的信息一致。
 在用户被动成交时，用户也会收到交易相关的信息。
 当交易失败时，会有如下的格式的消息：
@@ -1674,9 +1703,10 @@ c)等
 	  }
 	}
 ```
+
 通过success可以判断返回的交易结果是成功的还是失败的，其他的失败记录均即时反馈回给用户，无需在订阅中获得。
 
-关闭订阅
+### 关闭订阅
 
 通过发送如下命令，关闭订阅
 
@@ -1685,6 +1715,7 @@ c)等
 	  "command": "close"
 	}
 ```
+
 关闭订阅之后，后台返回订阅关闭结果
 
 ```
@@ -1696,28 +1727,26 @@ c)等
 
 ## 错误信息
 
-
-客户端错误
+1.客户端错误
 
 ClientError，此错误主要是客户端请求参数错误，包括井通地址格式不对，私钥格式不对，货币格式不对等以及根据每个接口提交的参数格式不对等导致的错误；
 
-网络错误
+2.网络错误
 
 NetworkError，此错误主要是网络错误，包括链接井通网络没有连上，请求服务超时等；
 
-交易错误
+3.交易错误
 
 TransactionError，此错误主要是重复资源号的错误，即DuplicateTransactionError；
 
-服务端错误
+4.服务端错误
 
 ServerError，此错误主要是后台程序错误，包括代码BUG、代码实现问题等；
-
 
 |编码 | 说明|
 |:- |:-|
 |0|success|
-|1000|client error|
+|1000|***client error***|
 |1001|Invalid parameter: address|
 |1002|Invalid parameter: secret|
 |1003|Invalid parameter: currency|
@@ -1753,11 +1782,10 @@ ServerError，此错误主要是后台程序错误，包括代码BUG、代码实
 |1033|Invalid parameter: payload, it must be string|
 |1034|Invalid parameter: amount,it must be a number greater than zero|
 |1035|Invalid parameter: params,it must be an array|
-|2000|Server error|
-|3000|Transaction error|
+|2000|***Server error***|
+|3000|***Transaction error***|
 |3001|Could not generate wallet|
-|4000|Network error|
+|4000|***Network error***|
 |4001|Remote is disconnected|
 |4002|Time out|
 |4003|Bad gateway|
-

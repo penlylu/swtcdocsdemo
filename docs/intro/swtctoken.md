@@ -14,7 +14,7 @@ SWTC通证是SWTC公链上的原生数字资产，是SWTC公链运行所需要�
 
 ## 通证发行
 
-SWTC发行总量固定为6000亿个，具体流通数量根据SWTC公链生态发展和交易需求逐步释放，目前流通量约为1056亿（105,620,057,001）个。其余的SWTC由SWTC基金会持有，并处于锁定状态，并只会遵循锁定释放流程进行公告并释放。
+SWTC发行总量固定为6000亿个，具体流通数量根据SWTC公链生态发展和交易需求逐步释放，目前流通量约为1000亿个。其余的SWTC由SWTC基金会持有，处于锁定状态，并只会遵循锁定释放流程进行公告并释放。
 
 SWTC基金会公布以下冷钱包地址，接受社区监督。
 
@@ -30,27 +30,27 @@ SWTC基金会公布以下冷钱包地址，接受社区监督。
 
 | 名称 | 交易对 | 网址 |
 | :-: | :-: | :-: |
-| 威链 | CNT,MOAC,ETH…… | weidex.vip/#/ |
+| 威链 | CNT,MOAC,ETH…… | [weidex.vip](weidex.vip) |
 
 * 中心化交易所
 
 名称|交易对|地址
 :-:|:-:|:-:
-币赢||www.coinw.me
-BIT-Z|ETH|www.bit-z.pro
-满币网|USDT|www.manbiwang.com
-Winmax||www.winmaxcoin.com
-ubit||www.ubitvip.com
-澳洲U网||www.uncoinex.com
-币诺||https://coinoah.com
-币博汇||www.bibohui.com.cn
-牛币网||www.51samoa.com
-汇币网||www.hb.top
-IBAT||www.ibatcoin.com
-亚太经合||www.adcex.com
-比特诺亚||www.bitnoah.com
-尚亚||www.hksy.com
-富比特||www.fubt.top
+币赢||[www.coinw.me](www.coinw.me)
+BIT-Z|ETH|[www.bit-z.pro](www.bit-z.pro)
+满币网|USDT|[www.manbiwang.com](www.bit-z.pro)
+Winmax||[www.winmaxcoin.com]([www.winmaxcoin.com])
+ubit||[www.ubitvip.com](www.ubitvip.com)
+澳洲U网||[www.uncoinex.com](www.uncoinex.com)
+币诺||[coinoah.com](https://coinoah.com)
+币博汇||[www.bibohui.com.cn](www.bibohui.com.cn)
+牛币网||[www.51samoa.com](www.51samoa.com)
+汇币网||[www.hb.top](www.hb.top)
+IBAT||[www.ibatcoin.com](www.ibatcoin.com)
+亚太经合||[www.adcex.com](www.adcex.com)
+比特诺亚||[www.bitnoah.com](www.bitnoah.com)
+尚亚||[www.hksy.com](www.hksy.com)
+富比特||[www.fubt.top](www.fubt.top)
 
 SWTC通证信息已收录至以下检索网站：
 

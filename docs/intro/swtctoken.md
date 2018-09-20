@@ -30,7 +30,7 @@ SWTC基金会公布以下冷钱包地址，接受社区监督。
 
 | 名称 | 交易对 | 网址 |
 | :-: | :-: | :-: |
-| 威链 | CNT,MOAC,ETH…… | weidex.vip |
+| 威链 | CNT,MOAC,ETH…… | weidex.vip/#/ |
 
 * 中心化交易所
 
@@ -42,7 +42,7 @@ BIT-Z|ETH|www.bit-z.pro
 Winmax||www.winmaxcoin.com
 ubit||www.ubitvip.com
 澳洲U网||www.uncoinex.com
-币诺||coinoah.com
+币诺||https://coinoah.com
 币博汇||www.bibohui.com.cn
 牛币网||www.51samoa.com
 汇币网||www.hb.top

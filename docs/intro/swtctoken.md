@@ -2,21 +2,21 @@
 
 ***
 
-SWTC通证是SWTC公链上的原生数字资产，是SWTC公链运行所需要的介质和燃料，作用类似于比特币网络中的BTC或以太坊中的ETH。SWTC公链上的所有账户必须保留最低限额的SWTC作为冻结，SWTC可以在所有账户之间转移。
+&emsp;&emsp;SWTC通证是SWTC公链上的原生数字资产，是SWTC公链运行所需要的介质和燃料，作用类似于比特币网络中的BTC或以太坊中的ETH。SWTC公链上的所有账户必须保留最低限额的SWTC作为冻结，SWTC可以在所有账户之间转移。
 
 ## 作用
 
-作为SWTC公链上的内建通证，SWTC主要有两个作用。
+&emsp;&emsp;作为SWTC公链上的内建通证，SWTC主要有两个作用。
 
-首先，SWTC保障了SWTC公链运行的稳定和安全。在SWTC公链上，新建账户需要冻结最低限额的SWTC，交易需要消耗SWTC作为交易费用，这个机制设计，对于正常交易，几乎可以忽略不计，但对于恶意攻击，则可以大幅提高恶意攻击的成本，比如DoS和灰尘攻击。
+&emsp;&emsp;首先，SWTC保障了SWTC公链运行的稳定和安全。在SWTC公链上，新建账户需要冻结最低限额的SWTC，交易需要消耗SWTC作为交易费用，这个机制设计，对于正常交易，几乎可以忽略不计，但对于恶意攻击，则可以大幅提高恶意攻击的成本，比如DoS和灰尘攻击。
 
-其次，SWTC在不同数字资产的交易中发挥着桥梁作用。SWTC公链上的两种数字资产可能没有直接交易，在这种情况下，可以将资产A换成SWTC，再将SWTC交换成资产B。
+&emsp;&emsp;其次，SWTC在不同数字资产的交易中发挥着桥梁作用。SWTC公链上的两种数字资产可能没有直接交易，在这种情况下，可以将资产A换成SWTC，再将SWTC交换成资产B。
 
 ## 通证发行
 
-SWTC发行总量固定为6000亿个，具体流通数量根据SWTC公链生态发展和交易需求逐步释放，目前流通量约为1000亿个。其余的SWTC由SWTC基金会持有，处于锁定状态，并只会遵循锁定释放流程进行公告并释放。
+&emsp;&emsp;SWTC发行总量固定为6000亿个，具体流通数量根据SWTC公链生态发展和交易需求逐步释放，目前流通量约为1000亿个。其余的SWTC由SWTC基金会持有，处于锁定状态，并只会遵循锁定释放流程进行公告并释放。
 
-SWTC基金会公布以下冷钱包地址，接受社区监督。
+&emsp;&emsp;SWTC基金会公布以下冷钱包地址，接受社区监督。
 
 | 钱包地址 | 锁仓数量 |
 | :-: | :---: |
@@ -52,7 +52,7 @@ IBAT||[www.ibatcoin.com](www.ibatcoin.com)
 尚亚||[www.hksy.com](www.hksy.com)
 富比特||[www.fubt.top](www.fubt.top)
 
-SWTC通证信息已收录至以下检索网站：
+&emsp;&emsp;SWTC通证信息已收录至以下检索网站：
 
 * [非小号](https://www.feixiaohao.com/currencies/swtc/)
 
@@ -60,18 +60,18 @@ SWTC通证信息已收录至以下检索网站：
 
 ## 支持SWTC的钱包
 
-数字钱包是用户接触区块链资产的主要工具。用户需要使用支持SWTC公链的钱包来持有和交易SWTC以及SWTC公链上的数字资产。
+&emsp;&emsp;数字钱包是用户接触区块链资产的主要工具。用户需要使用支持SWTC公链的钱包来持有和交易SWTC以及SWTC公链上的数字资产。
 
-以下为支持SWTC公链的数字钱包：
+&emsp;&emsp;以下为支持SWTC公链的数字钱包：
 
 * [SWTC Wallet](https://app.swtc.pro)
 
-由井通科技开发的SWTC钱包，包括网页版、Android和iOS版本。
+&emsp;&emsp;由井通科技开发的SWTC钱包，包括网页版、Android和iOS版本。
 
 * [TokenPocket](https://www.mytokenpocket.vip/)
 
-一款支持多平台的数字资产钱包，当前支持以太坊，SWTC，墨客（MOAC），EOS等底层平台。
+&emsp;&emsp;一款支持多平台的数字资产钱包，当前支持以太坊，SWTC，墨客（MOAC），EOS等底层平台。
 
 * [MytumWallet](http://www.bbswtc.com/forum.php?mod=viewthread&tid=381&extra=page%3D1)
 
-SWTC开发者社区第一期开发大赛的获奖作品，为一款桌面端SWTC钱包。
+&emsp;&emsp;SWTC开发者社区第一期开发大赛的获奖作品，为一款桌面端SWTC钱包。

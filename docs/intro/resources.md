@@ -2,19 +2,31 @@
 
 ***
 
-# 资源
+## 资源
 
-1 SWTC公链官网
+### SWTC公链官方网站
 
-www.swtc.top
+[www.swtc.top](www.swtc.top)
 
-2 区块浏览器
+### 区块浏览器
 
-http://state.jingtum.com
+[state.jingtum.com](state.jingtum.com)
 
-# 社区
+## 社区
 
-1 官方QQ社区群
+**微信公众号**
+
+井通区块链、SWTC互动社区、SWTC社区
+
+**微博**
+
+[井通科技](https://weibo.com/u/6414971279)
+
+**论坛**
+
+[SWTC社区](http://bbswtc.com)
+
+**QQ社区群**
 
 SWTC社区交流1群：538820955
 
@@ -32,19 +44,8 @@ SWTC社区交流8群：197265560 
 
 SWTC社区交流9群：736212855
 
-
-2 官方电报
+**电报**
 
 http://0.plus/swtcchina
 
-3 官方论坛
 
-http://bbswtc.com
-
-4 官方微博
-
-井通科技 https://weibo.com/u/6414971279
-
-5 官方微信公众号
-
-井通区块链、Swtc互动社区、SWTC社区

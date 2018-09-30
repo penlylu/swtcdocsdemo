@@ -13,9 +13,7 @@ pages:
     - '费用': 'concepts/fee.md'
     - '撮合交易': 'concepts/exchange.md'
     - '账本': 'concepts/ledger.md'
-    - '操作': 'concepts/operation.md'
     - '节点': 'concepts/node.md'
-    - '智能合约': 'concepts/contract.md'
     - '集群': 'concepts/cluster.md'
     - '测试网': 'concepts/testnet.md'
 - '开发参考':

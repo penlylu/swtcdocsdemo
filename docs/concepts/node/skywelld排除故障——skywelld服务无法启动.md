@@ -1,19 +1,19 @@
-#skywelld排除故障——skywelld服务无法启动
+# skywelld排除故障——skywelld服务无法启动
 
 此页面解释了`skywelld`服务器无法启动的可能原因以及如何解决它们。
 
 这些说明假定您已在受支持的平台上安装skywelld。
 
 
-##文件描述符限制
+## 文件描述符限制
 
 在某些Linux变体上，在尝试运行`skywelld`时可能会收到如下错误消息：
 
 ```
-WARNING: There are only 1024 file descriptors (soft limit) available, 		which limit the number of simultaneous connections.
+WARNING: There are only 1024 file descriptors (soft limit) available, which limit the number of simultaneous connections.
 ```
 
-发生这种情况是因为系统对单个进程可能打开的文件数有安全限制，但是对于“skywelld”，限制设置得太低。要解决此问题，需要** root访问权限**。通过以下步骤增加允许打开“skywelld”文件的数量：
+发生这种情况是因为系统对单个进程可能打开的文件数有安全限制，但是对于“skywelld”，限制设置得太低。要解决此问题，需要**root访问权限**。通过以下步骤增加允许打开“skywelld”文件的数量：
 
 1.将以下行添加到`/etc/security/limits.conf`文件的末尾：
 
@@ -33,7 +33,7 @@ WARNING: There are only 1024 file descriptors (soft limit) available, 		which li
         fs.file-max = 65536
 
 
-##无法打开/etc/opt/skywelld/skywelld.cfg
+## 无法打开/etc/opt/skywelld/skywelld.cfg
 
 如果`skywelld`在启动时崩溃并出现如下错误，则表示`skywelld`无法读取其配置文件：
 
@@ -53,7 +53,7 @@ Aborted (core dumped)
 
 - 使用--conf 命令行选项指定首选配置文件的路径
 
-##无法打开验证程序文件
+## 无法打开验证程序文件
 
 如果`skywelld`在启动时崩溃并出现如下错误，则表示它可以读取其主配置文件，但该配置文件指定了一个单独的验证器配置文件（通常名为`validators.txt`），其中`skywelld`不能读。
 
@@ -76,7 +76,7 @@ Aborted (core dumped)
         [validator_list_keys]
         ED2677ABFFD1B33AC6FBC3062B71F1E8397C1505E1C42C64D11AD1B28FF73F4734
 
-##无法创建数据库路径
+## 无法创建数据库路径
 
 如果`skywelld`在启动时崩溃并出现如下错误，则表示服务器对其配置文件中的`[database_path]`没有写权限。
 
@@ -97,7 +97,7 @@ Aborted (core dumped)
 - 授予`skywelld`用户对配置的数据库路径的写权限。
 
 
-##数据库状态错误
+## 数据库状态错误
 
 如果`skywelld`服务器的状态数据库已损坏（可能是由于意外关闭），可能会发生以下错误：
 
@@ -123,10 +123,10 @@ mv /var/lib/skywelld/db /var/lib/skywelld/db-bak
 rm -r /var/lib/skywelld/db
 ```
 
-**提示：**删除`skywelld`数据库通常是安全的，因为任何单个服务器都可以从SWTC Ledger网络中的其他服务器重新下载分类帐历史记录。
+**提示**：删除`skywelld`数据库通常是安全的，因为任何单个服务器都可以从SWTC Ledger网络中的其他服务器重新下载分类帐历史记录。
 
 
-##在线删除小于分类帐历史记录
+## 在线删除小于分类帐历史记录
 
 如下所示的错误消息表明`skywelld.cfg`文件对于`[ledger_history]`和`online_delete`具有矛盾的值。
 
@@ -147,10 +147,10 @@ Terminating thread skywelld: main: unhandled St13runtime_error 'online_delete mu
 Terminating thread skywelld: main: unhandled N5beast14BadLexicalCastE 'std::bad_cast'
 ```
 
-`node_size`字段的有效参数是'tiny`，`small`，`medium`或`huge`。有关更多信息，请参阅[节点大小]。
+`node_size`字段的有效参数是`tiny`，`small`，`medium`或`huge`。有关更多信息，请参阅[节点大小]。
 
 
-##碎片路径丢失
+## 碎片路径丢失
 
 如下所示的错误表示`skywelld.cfg`具有不完整的[history sharding]（history-sharding.html）配置：
 

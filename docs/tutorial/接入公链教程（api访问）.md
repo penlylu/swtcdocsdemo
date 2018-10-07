@@ -10,6 +10,7 @@
 - 1、GET请求
   - Method: “GET”
   - SCHEME: “请求地址”
+ ![avatar](https://github.com/penlylu/swtcdocsdemo/blob/master/docs/tutorial/pictures/API_GET.png)
  
 - 2、POST请求
   - Method: “POST”

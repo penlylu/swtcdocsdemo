@@ -34,9 +34,9 @@ skywelld server_info
 
 - **`peers`** - 此字段指示您的服务器连接到的SWTC Ledger对等网络中有多少其他服务器。健康的服务器通常显示5到50个对等体，除非明确配置为仅连接到某些对等体。
 
-   - 如果您有0个对等方，则您的服务器可能无法联系网络，或者您的系统时钟可能出错。 （skywelld建议在所有服务器上运行[NTP]（http://www.ntp.org/）守护程序以保持其时钟同步。）
+   - 如果您有0个对等方，则您的服务器可能无法联系网络，或者您的系统时钟可能出错。 （skywelld建议在所有服务器上运行[NTP]（ http://www.ntp.org/ ）守护程序以保持其时钟同步。）
 
-  - 如果您有10个对等体，则可能表示您的“skywelld”无法通过路由器使用[NAT]（https://en.wikipedia.org/wiki/Network_address_translation）接收传入连接。您可以通过配置路由器的防火墙来转发用于对等连接的端口来提高连接性（端口50333[默认]]
+  - 如果您有10个对等体，则可能表示您的“skywelld”无法通过路由器使用[NAT]（ https://en.wikipedia.org/wiki/Network_address_translation ）接收传入连接。您可以通过配置路由器的防火墙来转发用于对等连接的端口来提高连接性（端口50333[默认]]
   
 ### 没有来自服务器的响应
 

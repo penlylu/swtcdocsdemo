@@ -22,7 +22,8 @@
 请求参数：`{"jsonrpc":"2.0","method":"jt_blockNumber","params":[],"id":1}`
 
 请求结果：`{ "id":1, "jsonrpc": "2.0", "result": 112948, "status": "success" }`
- 
+
+![avatar](https://github.com/penlylu/swtcdocsdemo/blob/master/docs/tutorial/pictures/post.png) 
 
 
 ## 二、代码调用API接口

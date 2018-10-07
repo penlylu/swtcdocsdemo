@@ -17,8 +17,7 @@
   - SCHEME: “请求地址”
   - HEADERS: “CONTENT-TYPE：APPLICATION/JSON”
   - BODY: “请求的JSON字符串”
- 
-
+  ![avatar](https://github.com/penlylu/swtcdocsdemo/blob/master/docs/tutorial/pictures/API_POST.png)
 
 ## 二、代码调用API接口
 - 第一步：选用代码语言，如JAVA、PHP、C、GO等后端开发语言。

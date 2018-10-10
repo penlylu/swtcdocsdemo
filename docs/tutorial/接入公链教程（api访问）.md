@@ -24,7 +24,7 @@
 
 - 第二步：使用开发语言对API进行调用，接口调用分为get请求和post请求（请求地址、请求参数、请求返回结果参照网站“API说明v2”。
 
-以JAVA语言为例：
+### 以JAVA语言为例：
 
 - 1、GET请求
 ```
@@ -159,4 +159,42 @@ public class TestApi {
 		}
 	}
 }
+```
+
+### 以Python语言为例：
+```
+import urllib.request
+import urllib.parse
+import json
+import time
+def http_get():
+    url='https://tapi.jingtum.com/v2/wallet/new'
+    response = urllib.request.urlopen(url)
+    print(response.read().decode('utf-8'))
+def http_post():	
+	serverurl='https://tapi.jingtum.com/v2/accounts/jNn89aY84G23onFXupUd7bkMode6aKYMt8/payments'
+	client_id = "id"+(str(time.time()))
+	values ={
+		"client_id" : client_id,
+		"payment" : {
+			"amount" : {
+				"currency" : "SWT",
+				"issuer" : "",
+				"value" : "1"
+			},
+			"destination" : "j3UcBBbes7HFgmTLmGkEQQShM2jdHbdGAe",
+			"memos" : [ "" ],
+			"source" : "jNn89aY84G23onFXupUd7bkMode6aKYMt8"
+		},
+		"secret" : "spvFsSWaD1BmNk7h3Zvo98YRi1NxX"
+	}
+	jdata = json.dumps(values).encode()
+	request = urllib.request.Request(serverurl, jdata)
+	request.add_header('Content-Type','application/json')
+	request.get_method = lambda:'POST'
+	response = urllib.request.urlopen(request)
+	print(response.read().decode('utf-8'))
+	
+http_get()  #get请求demo
+#http_post() #post请求demo
 ```

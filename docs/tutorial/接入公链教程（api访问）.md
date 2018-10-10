@@ -236,3 +236,62 @@ http_get1();
 
 ?> 
 ```
+
+### 以go语言为例：
+```
+package main
+
+import (
+    "fmt"
+    "encoding/json"
+	"bytes"
+	"io/ioutil"
+	"net/http"
+)
+
+func httpGet(){
+	resp, err := http.Get("https://tapi.jingtum.com/v2/wallet/new")
+	if err != nil {
+	// handle error
+	}
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+	 
+	if err != nil {
+	// handle error
+	}
+	 
+	fmt.Println(string(body))
+}
+
+func httpPost() {
+    url := "https://tapi.jingtum.com/v2/accounts/jNn89aY84G23onFXupUd7bkMode6aKYMt8/payments"
+
+    options := map[string]interface{}{"secret": "spvFsSWaD1BmNk7h3Zvo98YRi1NxX", "client_id": "aaaabbbb1", "payment": map[string]interface{}{"source":"jNn89aY84G23onFXupUd7bkMode6aKYMt8","destination":"j3UcBBbes7HFgmTLmGkEQQShM2jdHbdGAe","amount":map[string]interface{}{"value":"1.1","currency":"SWT","issuer":""}}}
+	mjson,_ :=json.Marshal(options)
+	mString :=string(mjson)
+    jsonStr := []byte(mString)
+
+    req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
+    req.Header.Set("Content-Type", "application/json")
+    
+    client := &http.Client{}
+    resp, err := client.Do(req)
+    if err != nil {
+        panic(err)
+    }
+    defer resp.Body.Close()
+
+    fmt.Println("response Status:", resp.Status)
+    fmt.Println("response Headers:", resp.Header)
+    body, _ := ioutil.ReadAll(resp.Body)
+    fmt.Println("response Body:", string(body))
+
+}
+
+func main() {
+
+	httpGet()
+	//httpPost()
+}
+```

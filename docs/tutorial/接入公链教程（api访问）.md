@@ -198,3 +198,41 @@ def http_post():
 http_get()  #get请求demo
 #http_post() #post请求demo
 ```
+
+### 以PHP语言为例：
+
+```
+<?php
+
+function http_get1(){
+	$url='https://tapi.jingtum.com/v2/wallet/new';
+	$result = file_get_contents($url);
+	echo ($result);
+}
+
+function http_post1() {  
+ 
+	$url = "https://tapi.jingtum.com/v2/accounts/jNn89aY84G23onFXupUd7bkMode6aKYMt8/payments";
+	$cliend_id =strval(time());
+	$data = json_encode(array('secret'=>"spvFsSWaD1BmNk7h3Zvo98YRi1NxX",'client_id'=>$cliend_id,'payment'=>array('source' =>'jNn89aY84G23onFXupUd7bkMode6aKYMt8','destination' =>'j3UcBBbes7HFgmTLmGkEQQShM2jdHbdGAe','amount' =>array('value' =>'1.00','currency' =>'SWT','issuer' =>''))));  
+
+	$opts = array('http' => 
+		  array( 
+			  'method'  => 'POST',
+			  'header'  => 'Content-type: application/json',
+			  'content' => $data
+		  )
+	);
+	$context = stream_context_create($opts); 
+	$result = file_get_contents($url, false, $context);
+	
+	echo($result);
+}  
+http_get1();
+
+//http_post1();
+
+  
+
+?> 
+```

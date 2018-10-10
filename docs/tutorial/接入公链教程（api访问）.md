@@ -295,3 +295,187 @@ func main() {
 	//httpPost()
 }
 ```
+### 以JAVA语言为例：
+```
+package com.jingtum.api.test;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.UUID;
+
+import com.alibaba.fastjson.JSONObject;
+public class JavaApi {
+	public static void main(String[] args) {
+		//创建账号get
+		String  url = "https://tapi.jingtum.com/v2/wallet/new";
+		String result = get(url);
+		System.out.println("get请求结果："+result);
+		
+		
+		//POST
+		/*String  url = "https://tapi.jingtum.com/v2/accounts/jNn89aY84G23onFXupUd7bkMode6aKYMt8/payments";
+		JSONObject payment_item = new JSONObject();
+		payment_item.put("secret", "spvFsSWaD1BmNk7h3Zvo98YRi1NxX");
+		payment_item.put("client_id", UUID.randomUUID().toString());
+			JSONObject payment = new JSONObject();
+			payment.put("source", "jNn89aY84G23onFXupUd7bkMode6aKYMt8");
+			payment.put("destination", "j9U7YWAHF7ksFLZn2keD5e6ckoKf4nxdZY");
+				JSONObject destination_amount = new JSONObject();
+				destination_amount.put("value", "25");
+				destination_amount.put("currency", "SWT");
+				destination_amount.put("issuer", "");
+			payment.put("amount", destination_amount);
+			String[] memos = {"String","账户激活"};
+			payment.put("memos", memos);
+		payment_item.put("payment", payment);
+		System.out.println("激活请求参数："+payment_item.toJSONString());
+		String result = post(url, payment_item.toJSONString());
+		System.out.println("激活请求结果："+result);*/
+		
+		
+	}
+	public static String get(String location) {
+		HttpURLConnection conn = null;
+		InputStream in = null;
+		BufferedReader br = null;
+		try {
+			URL url = new URL(location);
+			conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET");
+			conn.setRequestProperty("contentType", "UTF-8");
+			in = conn.getInputStream();
+			br = new BufferedReader(new InputStreamReader(in, "UTF-8"));
+			String lines;
+			StringBuffer sb = new StringBuffer();
+			while ((lines = br.readLine()) != null)
+				sb.append(lines);
+			return sb.toString();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		} finally {
+			if (conn != null)
+				conn.disconnect();
+			if (in != null)
+				try {
+					in.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			if (br != null)
+				try {
+					br.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+		}
+	}
+	
+	public static String post(String location, String data) {
+		HttpURLConnection conn = null;
+		PrintWriter out = null;
+		BufferedReader br = null;
+		try {
+			URL url = new URL(location);
+			conn = (HttpURLConnection) url.openConnection();
+			conn.setDoOutput(true);
+			conn.setDoInput(true);
+			conn.setRequestMethod("POST");
+			conn.setUseCaches(false);
+			conn.setInstanceFollowRedirects(true);
+			conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+			conn.connect();
+			out = new PrintWriter(new OutputStreamWriter(conn.getOutputStream(), "UTF-8"));
+			out.write(data);
+			out.flush();
+			br = new BufferedReader(new InputStreamReader(conn.getInputStream(), "UTF-8"));
+			String lines;
+			StringBuffer sb = new StringBuffer();
+			while ((lines = br.readLine()) != null)
+				sb.append(lines);
+			return sb.toString();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		} finally {
+			if (conn != null)
+				conn.disconnect();
+			if (br != null)
+				try {
+					br.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+		}
+	}
+}
+```
+### 以nodejs语言为例：
+```
+var https = require('https');
+
+function http_get() {
+	var url = "https://tapi.jingtum.com/v2/wallet/new";
+	https.get(url, function(res) {
+		console.log("statusCode: ", res.statusCode);
+		console.log("headers: ", res.headers);
+		var _data = '';
+		res.on('data', function(chunk) {
+			_data += chunk;
+		});
+		res.on('end', function() {
+			console.log("\n--->>\ngetresult:", _data)
+		});
+	})
+
+}
+function http_post() {
+	var client_id = "id" + new Date().getTime();
+	var post_data = {
+		"client_id" : client_id,
+		"payment" : {
+			"amount" : {
+				"currency" : "SWT",
+				"issuer" : "",
+				"value" : "1"
+			},
+			"destination" : "j3UcBBbes7HFgmTLmGkEQQShM2jdHbdGAe",
+			"memos" : [ "" ],
+			"source" : "jNn89aY84G23onFXupUd7bkMode6aKYMt8"
+		},
+		"secret" : "spvFsSWaD1BmNk7h3Zvo98YRi1NxX"
+	};
+	var content = JSON.stringify(post_data);
+	var options = {
+		host : 'tapi.jingtum.com',
+		port : 443,
+		path : '/v2/accounts/jNn89aY84G23onFXupUd7bkMode6aKYMt8/payments',
+		method : 'POST',
+		headers : {
+			'Content-Type' : 'application/json',
+			'Content-Length' : content.length
+		}
+	};
+	console.log("post options:\n", options);
+	console.log("content:", content);
+	console.log("\n");
+	var req = https.request(options, function(res) {
+		console.log("statusCode: ", res.statusCode);
+		console.log("headers: ", res.headers);
+		var _data = '';
+		res.on('data', function(chunk) {
+			_data += chunk;
+		});
+		res.on('end', function() {
+			console.log("\n--->>\npostresult:", _data)
+		});
+	});
+	req.write(content);
+	req.end();
+}
+http_get();//get请求
+//http_post();//post请求
+```

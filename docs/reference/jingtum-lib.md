@@ -2,7 +2,11 @@
 
 ***
 
-jingtum-lib 访问地址为 `https://api.jingtum.com`
+jingtum-lib API服务器
+
+正式环境： `https://api.jingtum.com`
+
+测试环境： `https://tapi.jingtum.com`
 
 ## 账号类接口
 

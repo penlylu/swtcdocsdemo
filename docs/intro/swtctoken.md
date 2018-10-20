@@ -30,27 +30,25 @@ SWTC基金会公布以下冷钱包地址，接受社区监督。
 
 | 名称 | 交易对 | 网址 |
 | :-: | :-: | :-: |
-| 威链 | CNT,MOAC,ETH…… | [weidex.vip](weidex.vip) |
+| 威链 | CNT,MOAC,ETH…… | [weidex.vip](https://weidex.vip) |
 
 * 中心化交易所
 
 名称|交易对|地址
 :-:|:-:|:-:
-币赢||[www.coinw.me](www.coinw.me)
-BIT-Z|ETH|[www.bit-z.pro](www.bit-z.pro)
-满币网|USDT|[www.manbiwang.com](www.bit-z.pro)
-Winmax||[www.winmaxcoin.com]([www.winmaxcoin.com])
-ubit||[www.ubitvip.com](www.ubitvip.com)
-澳洲U网||[www.uncoinex.com](www.uncoinex.com)
-币诺||[coinoah.com](https://coinoah.com)
-币博汇||[www.bibohui.com.cn](www.bibohui.com.cn)
-牛币网||[www.51samoa.com](www.51samoa.com)
-汇币网||[www.hb.top](www.hb.top)
-IBAT||[www.ibatcoin.com](www.ibatcoin.com)
-亚太经合||[www.adcex.com](www.adcex.com)
-比特诺亚||[www.bitnoah.com](www.bitnoah.com)
-尚亚||[www.hksy.com](www.hksy.com)
-富比特||[www.fubt.top](www.fubt.top)
+币赢|CNYT|[www.coinw.me](https://www.coinw.me)
+BIT-Z|ETH|[www.bit-z.pro](https://www.bit-z.pro)
+满币网|USDT|[www.manbiwang.com](http://www.manbiwang.com)
+Winmax|UDC|[winmax.me](https://winmax.me)
+ubit|TWD|[www.ubitvip.com](http://www.ubitvip.com)
+澳洲U网|BTC|[www.ucoin.pw](https://www.ucoin.pw/)
+币诺|ETH|[coinoah.com](https://coinoah.com)
+牛币网|CNY|[www.51samoa.com](http://www.51samoa.com)
+汇币网|USDE|[www.hb.top](https://hb.top)
+IBAT|EUSD|[www.ibatcoin.com](https://www.ibatcoin.com)
+比特诺亚|AUC|[www.bitnoah.com](https://www.bitnoah.com)
+尚亚|USDT|[syex.io](https://syex.io)
+富比特|ETH,FBT|[www.fubt.top](www.fubt.top)
 
 SWTC通证信息已收录至以下检索网站：
 

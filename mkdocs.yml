@@ -6,7 +6,7 @@ pages:
     - '社区及资源': 'intro/resources.md'
     - '基金会及历史': 'intro/foundation.md'
     - '生态节点计划': 'intro/nodestrategy.md'
-- 'WIKI':
+- 'Wiki':
     - '账本结构': 'wiki/ledgerstructure.md'
     - '交易结构': 'wiki/txstructure.md'
 - '开发参考':

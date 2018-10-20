@@ -17,13 +17,14 @@ pages:
     - '集群': 'concepts/cluster.md'
     - '测试网': 'concepts/testnet.md'
 - '开发参考':
-    - 'API列表': 'reference/api.md'
+    - 'jingtum-lib手册': 'reference/jingtum-lib.md'
     - 'SDKs': 'reference/sdks.md'
     - 'Service节点手册': 'reference/servicenode.md'
 - '关于': 'about.md'
 - '其他':
-    - '应用上链流程': 'tutorial/tutorial0.md'
-    - '申请发行通证流程': 'tutorial/tutorial1.md'
+    - 'Jingtum-lib使用教程': 'tutorial/jingtum-lib_tutorial.md'
+    - 'Service节点使用教程': 'tutorial/service_tutorial.md'
+    - '通证发行流程': 'tutorial/token_issue.md'
     - 'SWTC Labs': 'tutorial/swtclabs.md'
 extra_css: ['docs/bootstrap/css']
 extra_javascript: ['docs/bootstrap/js']

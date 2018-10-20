@@ -1,15 +1,25 @@
-# 井通公链Service节点使用教程
+# Service节点使用教程
+
+***
+
+## 安装流程
 
 - 第一步：根据用户环境下载skywell.node程序，分别为windows、mac、linux三个版本。
+
 - 第二步：程序配置文件skywell.cfg修改访问节点地址。
+
 - 第三步：启动程序。
+
   - Windows：cmd下执行 `skywell.node.exe -api -rpc`
+
   - Linux：`./skywell.node -api -rpci`
-- 第四步：调用`JSON-RPC API`（详细请查询service接口手册）。
 
-以chrome浏览器的restlet为例：
+- 第四步：调用`JSON-RPC API`（详细请查询[Service节点手册](https://penlylu-demo.readthedocs.io/en/latest/reference/servicenode/)）。
 
-## 1、POST请求
+## 通过HTTP访问调用API接口
+
+下面以Chrome浏览器的restlet client为例：
+
   - Method:“POST”
   - SCHEME：“请求地址”
   - HEADERS：“CONTENT-TYPE：APPLICATION/JSON”
@@ -25,18 +35,9 @@
 
 ![avatar](https://github.com/penlylu/swtcdocsdemo/blob/master/docs/tutorial/pictures/post.png) 
 
+## 通过代码方式调用API接口
 
-## 二、代码调用API接口
-- 第一步：根据用户环境下载skywell.node程序，分别为windows、mac、linux三个版本。
-- 第二步：程序配置文件skywell.cfg修改访问节点地址。
-- 第三步：启动程序。
-  - Windows：cmd下执行 `skywell.node.exe -api -rpc`
-  - Linux：`./skywell.node -api -rpci`
-- 第四步：选用代码语言，如JAVA、PHP、C、GO等后端开发语言。
-- 第五步：使用开发语言对JSON-RPC API（详细请查询service接口手册）。
-
-以JAVA语言为例：
-## 2、POST请求
+使用开发语言模拟HTTP请求实现对JSON-RPC API的调用。
 
 例：通过RPC获取最新区块编号
 
@@ -47,7 +48,8 @@
 请求结果：`{ "id":1, "jsonrpc": "2.0", "result": 112948, "status": "success" }`
 
 **注意**：POST请求时，头部为`application/json; charset=UTF-8`；
-```
+
+```java
 package com.jingtum.api.test;
 import java.io.BufferedReader;
 import java.io.IOException;

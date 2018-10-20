@@ -37,7 +37,7 @@
 | ledger_hash | string | 除去ledger_hash外的区块的哈希值 |
 | ledger_index | number | 该区块的序列号 | 
 | ledger.accepted | boolean | 为true时，表示该区块正常关闭 |
-| ledger.account_hash | string | 帐户树的哈希值 |
+| ledger.account_hash | string | 账户树的哈希值 |
 | ledger.close_time | number | 该区块关闭的时间戳 |
 | ledger.close_time_human | string | 该区块关闭的时间 |
 | ledger.close_time_resolution | number | 关闭区块不同版本之间所差的秒数，在[2,120]之间 |

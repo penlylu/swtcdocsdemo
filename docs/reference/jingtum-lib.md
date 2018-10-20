@@ -2,7 +2,7 @@
 
 ***
 
-jingtum-lib访问地址为 'https://api.jingtum.com'
+jingtum-lib 访问地址为 `https://api.jingtum.com`
 
 ## 账号类接口
 

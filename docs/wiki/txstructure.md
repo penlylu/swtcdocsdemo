@@ -155,19 +155,19 @@
 
 | 属性 | 类型 | 解释 |
 |:-|:-|:-| 
-| Account | string | 交易发起方的帐户地址 |
-| Amount | string | swt的转帐数量 |
-| Amount | object | 银关发行的代币转帐数量 |
+| Account | string | 交易发起方的账户地址 |
+| Amount | string | swt的转账数量 |
+| Amount | object | 银关发行的代币转账数量 |
 | Amount.currency | string | 转账代币的名称 |
 | Amount.issuer | string | 转账代币的银关地址 |
 | Amount.currency | string | 转账代币的数量 |
-| Destination | string | 交易接收方的帐户地址 |
-| Fee | string | 转帐费用 |
+| Destination | string | 交易接收方的账户地址 |
+| Fee | string | 转账费用 |
 | Memos | array | 交易备注 |
 | Memos[].MemoData | string | 备注项的内容 |
 | Memos[].MemoType | string | 备注项的类型 |
-| Sequence | number | 交易发起帐户的发起交易的编号 |
-| SigningPubKey | string | 交易发起帐户的公钥 |
+| Sequence | number | 交易发起账户的发起交易的编号 |
+| SigningPubKey | string | 交易发起账户的公钥 |
 | Timestamp | number | 交易发起的时间戳 |
 | TransactionType | string | 交易类型 |
 | TxnSignarture | string | 交易签名 |
@@ -177,9 +177,9 @@
 | ledger_hash | string | 交易所在的区块哈希值 |
 | validated | boolean | 为true时，该交易为验证过的交易 |
 | meta | object | 交易执行结果 |
-| meta.AffectedNodes | array | 交易影响到的相关帐户 |
-| meta.AffectedNodes.ModifiedNode | object | 交易影响到的帐户 |
-| meta.AffectedNodes.ModifiedNode.FinalFields | object | 交易影响到的帐户的最终变动情况 |
-| meta.AffectedNodes.ModifiedNode.PreviousFields | object | 交易影响到的帐户的该变动的上一个历史情况 |
+| meta.AffectedNodes | array | 交易影响到的相关账户 |
+| meta.AffectedNodes.ModifiedNode | object | 交易影响到的账户 |
+| meta.AffectedNodes.ModifiedNode.FinalFields | object | 交易影响到的账户的最终变动情况 |
+| meta.AffectedNodes.ModifiedNode.PreviousFields | object | 交易影响到的账户的该变动的上一个历史情况 |
 | TransactionIndex | number | 交易在区块里的下标 |
 | TransactionResult | string | 交易执行结果的状态 |

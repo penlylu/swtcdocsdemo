@@ -7,6 +7,7 @@ pages:
     - '基金会及历史': 'intro/foundation.md'
     - '生态节点计划': 'intro/nodestrategy.md'
 - 'Wiki':
+    - '账户': 'wiki/account.md'
     - '资产': 'wiki/asset.md'
     - '账本结构': 'wiki/ledgerstructure.md'
     - '交易结构': 'wiki/txstructure.md'

@@ -1,12 +1,23 @@
-# jingtum-lib手册
+# Jingtum API
 
 ***
 
-jingtum-lib API服务器
+Jingtum API 是一款基于jingtum-lib开发的RESTful API服务器，旨在提供一套简单易用的SWTC公链访问接口。Jingtum API提供以下功能：
+
+* 提供基本的交易接口
+
+* 管理与SWTC公链的连接
+
+* 交易与账本提交
+
+Jingtum API 项目开源地址：[Github/jingtum-api](https://github.com/swtcpro/jingtum-api)
+
+以下为SWTC基金会官方搭建的Jingtum API服务器，你也可以在上述地址下载源码自行搭建。
 
 正式环境： `https://api.jingtum.com`
 
 测试环境： `https://tapi.jingtum.com`
+
 
 ## 账号类接口
 

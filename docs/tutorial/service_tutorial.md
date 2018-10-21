@@ -33,7 +33,7 @@
 
 请求结果：`{ "id":1, "jsonrpc": "2.0", "result": 112948, "status": "success" }`
 
-![avatar](https://github.com/penlylu/swtcdocsdemo/blob/master/docs/tutorial/pictures/post.png) 
+![avatar](./pic/post.png) 
 
 ## 通过代码方式调用API接口
 

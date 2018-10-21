@@ -1,14 +1,14 @@
-# Jingtum-lib使用教程
+# Jingtum API使用教程
 
 ***
 
-jingtum-lib是井通科技提供的用于访问SWTC公链的官方API接口。通过jingtum-lib，可以实现账户管理、支付、挂单、交易以及查询等功能。
+Jingtum API是井通科技提供的用于访问SWTC公链的RESTful API接口。通过Jingtum API，可以实现账户管理、支付、挂单、交易以及查询等基本功能。
 
 ## 一、通过HTTP访问调用API接口
 
 - 第一步：安装PostmanAPI调试工具、Chrome浏览器的restlet插件或者其他类似的调试工具。
 
-- 第二步：使用调试工具对jingtum-lib的API接口进行调用，接口调用分为GET请求和POST请求（请求地址、请求参数、请求返回结果参照本网站的[jingtum-lib手册](https://penlylu-demo.readthedocs.io/en/latest/reference/jingtum-lib/)）。
+- 第二步：使用调试工具对Jingtum API的接口进行调用，接口调用分为GET请求和POST请求（请求地址、请求参数、请求返回结果参照本网站的[Jingtum API手册](https://penlylu-demo.readthedocs.io/en/latest/reference/jingtum-api/)）。
 
 下面以Chrome浏览器的restlet client为例：
 

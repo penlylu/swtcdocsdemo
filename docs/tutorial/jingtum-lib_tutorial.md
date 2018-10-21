@@ -15,14 +15,14 @@ jingtum-lib是井通科技提供的用于访问SWTC公链的官方API接口。�
 - 1、GET请求
   - Method: “GET”
   - SCHEME: “请求地址”
- ![avatar](../pictures/API_GET.png)
+ ![avatar](./pic/API_GET.png)
  
 - 2、POST请求
   - Method: “POST”
   - SCHEME: “请求地址”
   - HEADERS: “CONTENT-TYPE：APPLICATION/JSON”
   - BODY: “请求的JSON字符串”
-  ![avatar](https://penlylu-demo.readthedocs.io/en/latest/tutorial/pictures/API_POST.png)
+  ![avatar](./pic/API_POST.png)
 
 ## 二、通过代码方式调用API接口
 

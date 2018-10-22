@@ -29,7 +29,7 @@
 - [JSON RPC API](#json-rpc-api)
 	- [JSON-RPC methods](#json-rpc-methods)
 		* [jt_syncing](#jt_syncing-%E5%90%8C%E6%AD%A5)
-		* [jt_blockNumber](##jt_blocknumber-%E5%8C%BA%E5%9D%97%E7%BC%96%E5%8F%B7)
+		* [jt_blockNumber](#jt_blocknumber-%E5%8C%BA%E5%9D%97%E7%BC%96%E5%8F%B7)
 		* [jt_getBalance](#jt_getbalance-%E8%8E%B7%E5%8F%96%E4%BD%99%E9%A2%9D)
 		* [jt_getTransactionCount](#jt_gettransactioncount-%E8%8E%B7%E5%8F%96%E4%BA%A4%E6%98%93%E6%95%B0)
 		* [jt_getBlockTransactionCountByHash](#jt_getblocktransactioncountbyhash-%E6%A0%B9%E6%8D%AE%E5%8C%BA%E5%9D%97%E5%93%88%E5%B8%8C%E8%8E%B7%E5%8F%96%E4%BA%A4%E6%98%93%E6%95%B0)

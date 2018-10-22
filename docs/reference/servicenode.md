@@ -3,7 +3,7 @@
 ## 主要功能
 
 	* 与 public node 相连，提供所有的账本的实时同步功能
-	* 对外提供区块链相关的api与rpc调用, 具体见[JSON RPC API](#json-rpc-api)
+	* 对外提供区块链相关的api与rpc调用, 具体见[JSON RPC API](# json-rpc-api)
 
 ## 命令行参数
 

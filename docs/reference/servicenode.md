@@ -28,7 +28,7 @@
 		* **-rpcport**, 设定启动的JSON RPC API服务的端口，默认为7545
 - [JSON RPC API](#json-rpc-api)
 	- [JSON-RPC methods](#json-rpc-methods)
-		* [jt_syncing](#https://github.com/penlylu/swtcdocsdemo/blob/master/docs/reference/servicenode.md#jt_syncing-%E5%90%8C%E6%AD%A5)
+		* [jt_syncing](https://github.com/penlylu/swtcdocsdemo/blob/master/docs/reference/servicenode.md#jt_syncing-%E5%90%8C%E6%AD%A5)
 		* [jt_blockNumber](#jt_blocknumber)
 		* [jt_getBalance](#jt_getbalance)
 		* [jt_getTransactionCount](#jt_gettransactioncount)

@@ -7,7 +7,7 @@
   
 - service node当前主要功能
 	* 与 public node 相连，提供所有的帐本的实时同步功能
-	* 对外提供区块链相关的api与rpc调用, 具体见[JSON RPC API](https://github.com/penlylu/swtcdocsdemo/blob/master/docs/reference/servicenode.md#json-rpc-api-reference)
+	* 对外提供区块链相关的api与rpc调用, 具体见[JSON RPC API](#json-rpc-api)
 - service node 命令行参数
 	- 参数配置类
 		* **-config**, 指定当前配置文件包括生成的帐户文件所在的目录，默认为当前目录
@@ -28,13 +28,13 @@
 		* **-rpcport**, 设定启动的JSON RPC API服务的端口，默认为7545
 - [JSON RPC API](#json-rpc-api)
 	- [JSON-RPC methods](#json-rpc-methods)
-		* [jt_syncing](https://github.com/penlylu/swtcdocsdemo/blob/master/docs/reference/servicenode.md#jt_syncing-%E5%90%8C%E6%AD%A5)
-		* [jt_blockNumber](#jt_blocknumber)
-		* [jt_getBalance](#jt_getbalance)
-		* [jt_getTransactionCount](#jt_gettransactioncount)
-		* [jt_getBlockTransactionCountByHash](#jt_getblocktransactioncountbyhash)
-		* [jt_getBlockTransactionCountByNumber](#jt_getblocktransactioncountbynumber)
-		* [jt_getBlockByHash](#jt_getblockbyhash)
+		* [jt_syncing](#jt_syncing-%E5%90%8C%E6%AD%A5)
+		* [jt_blockNumber](##jt_blocknumber-%E5%8C%BA%E5%9D%97%E7%BC%96%E5%8F%B7)
+		* [jt_getBalance](#jt_getbalance-%E8%8E%B7%E5%8F%96%E4%BD%99%E9%A2%9D)
+		* [jt_getTransactionCount](#jt_gettransactioncount-%E8%8E%B7%E5%8F%96%E4%BA%A4%E6%98%93%E6%95%B0)
+		* [jt_getBlockTransactionCountByHash](#jt_getblocktransactioncountbyhash-%E6%A0%B9%E6%8D%AE%E5%8C%BA%E5%9D%97%E5%93%88%E5%B8%8C%E8%8E%B7%E5%8F%96%E4%BA%A4%E6%98%93%E6%95%B0)
+		* [jt_getBlockTransactionCountByNumber](#jt_getblocktransactioncountbynumber-%E6%A0%B9%E6%8D%AE%E5%8C%BA%E5%9D%97%E7%BC%96%E5%8F%B7%E8%8E%B7%E5%8F%96%E4%BA%A4%E6%98%93%E6%95%B0)
+		* [jt_getBlockByHash](#jt_getblockbyhash-%E6%A0%B9%E6%8D%AE%E5%8C%BA%E5%9D%97%E5%93%88%E5%B8%8C%E8%8E%B7%E5%8F%96%E5%8C%BA%E5%9D%97%E4%BF%A1%E6%81%AF)
 		* [jt_getBlockByNumber](#jt_getblockbynumber)
 		* [jt_getTransactionByHash](#jt_gettransactionbyhash)
 		* [jt_getTransactionByBlockHashAndIndex](#jt_gettransactionbyblockhashandindex)

@@ -1,45 +1,13 @@
-# SDKs
+# 开发资源
 
-以下SDKs由SWTC社区开发并维护：
+***
 
-## Java SDK
+## SDKs
 
-作者：
+[Github/swtcpro](https://github.com/swtcpro/)中提供的SDKs由SWTC开发者社区开发并维护。
 
-[Github/jingtum-lib-java](https://github.com/swtcpro/jingtum-lib-java)
+目前支持的语言包括：[JAVA](https://github.com/swtcpro/jingtum-lib-java)、[C#](https://github.com/swtcpro/jingtum-lib-csharp)、[Node.js](https://github.com/swtcpro/jingtum-lib-nodejs)、[Python](https://github.com/swtcpro/jingtum-lib-python)
 
-## C# SDK
+## Jingtum API
 
-作者：
-
-[Github/jingtum-lib-csharp](https://github.com/swtcpro/jingtum-lib-csharp)
-
-## Node.js SDK
-
-作者：
-
-[Github/jingtum-lib-nodejs](https://github.com/swtcpro/jingtum-lib-nodejs)
-
-## Python SDK
-
-作者：
-
-[Github/jingtum-lib-python](https://github.com/swtcpro/jingtum-lib-python)
-
-## C++ SDK
-
-作者：
-
-[Github/jingtum-lib-cpp](#)
-
-## Go SDK
-
-作者：
-
-[Github/jingtum-lib-go](#)
-
-## Ojective-C SDK
-
-作者：
-
-[Github/jingtum-lib-ojectivec](#)
+## JCCLib

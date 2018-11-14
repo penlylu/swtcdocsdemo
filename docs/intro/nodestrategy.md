@@ -72,3 +72,4 @@ CA节点|多伦多|1||
 中关村节点|北京|1||
 欧洲节点|德国|1|[Blockweise](http://blockweise.com/)|info@blockweise.com
 格莱珉节点|兰考|1||
+徽节点|芜湖|1|芜湖安风德信息技术有限公司|

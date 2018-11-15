@@ -6,15 +6,13 @@ SWTC Labs 是一个面向用户展示SWTC公链正在开发的新功能以及收
 
 ## Service节点
 
-功能：与 public node 相连，提供所有的账本的实时同步功能；提供一套全新的访问接口，可以对外提供SWTC公链相关的api与rpc调用。
+功能：与 Public Node 相连，提供所有的账本的实时同步功能；提供一套全新的访问接口，可以对外提供SWTC公链相关的API与RPC调用。
 
-最新版本：0.7.2
+下载：
 
-测试环境：`http://139.198.191.254`
+使用手册：[Service节点手册](https://penlylu-demo.readthedocs.io/en/latest/reference/servicenode/)
 
-测试手册：[Service节点手册](https://penlylu-demo.readthedocs.io/en/latest/reference/servicenode/)
-
-如果需要自行搭建，可以下载Service节点部署程序。
+大家可以自行下载Service节点部署程序，自主搭建服务节点。
 
 ## 智能合约
 

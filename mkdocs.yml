@@ -15,7 +15,7 @@ pages:
 - '开发参考':
     - 'Jingtum API': 'reference/jingtum-api.md'
     - 'Service节点手册': 'reference/servicenode.md'
-    - 'SDKs': 'reference/sdks.md'
+    - '开发资源': 'reference/sdks.md'
 - '其他':
     - 'Jingtum API使用教程': 'tutorial/jingtum-api_tutorial.md'
     - 'Service节点使用教程': 'tutorial/service_tutorial.md'

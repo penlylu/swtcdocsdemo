@@ -7,7 +7,6 @@
 ## 命令行参数
 
 	- 参数配置类
-		* **-config**, 指定当前配置文件包括生成的帐户文件所在的目录，默认为当前目录
 		* **-data_dir**， 指定帐本存放目录，默认为当前目录
 		* **-database_name**， 指定帐本数据库目录名，默认为"jingtum.db"
 		* **-endpoint**, 指定连接的public node的地址，默认为测试环境的一个public node的地址，即"ws://ts.jingtum.com:5020"
